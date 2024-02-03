@@ -20,7 +20,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "echo \"Skipping tests\"",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -42,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@types/leaflet": "^1.9.8"
+    "@types/leaflet": "^1.9.8",
+    "cypress": "^13.6.4"
   }
 }
