@@ -1,12 +1,13 @@
 import React from 'react';
 import './Main.css';
+import MapComponent from '../Map/Map';
 
 const Main = () => {
   return (
     <div className="main">
-      <h2>Welcome to Belongea Boulangerie</h2>
-      <p>Select a region to explore our artisanal breads.</p>
-
+      <div className="map-container">
+        <MapComponent />
+      </div>
     </div>
   );
 };

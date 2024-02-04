@@ -1,0 +1,24 @@
+.map-container {
+    margin: 20px auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 60%;
+    max-width: 600px;
+    overflow: hidden;
+}
+  
+.leaflet-container {
+    height: calc(100vh - 100px);
+    width: 100%;
+}
+
+.country-label div {
+    color: rgba(41, 72, 51, 0.7);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.leaflet-control-attribution {
+    display: none;
+}
