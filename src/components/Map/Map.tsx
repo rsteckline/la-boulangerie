@@ -9,8 +9,9 @@ const MapComponent = () => {
   return (
     <MapContainer center={[0, 0]} zoom={2} style={{ height: '80vh', width: '100%' }}>
       <TileLayer
-        url="https://tile.thunderforest.com/pioneer/{z}/{x}/{y}.png?apikey=a7eda3efcc6b40449d697372a8171c3b"
+        url="https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=a7eda3efcc6b40449d697372a8171c3b"
         attribution='&copy; <a href="http://thunderforest.com">Thunderforest</a> contributors'
+        noWrap={true}
       />
       <GeoJSONLayer />
     </MapContainer>
