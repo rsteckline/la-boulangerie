@@ -5,7 +5,6 @@ import Main from '../Main/Main';
 import BreadList from '../BreadList/BreadList';
 import BreadDetail from '../BreadDetail/BreadDetail';
 import './App.css';
-import { MapContainer, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 
 function App() {
