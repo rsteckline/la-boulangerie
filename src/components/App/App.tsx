@@ -5,6 +5,7 @@ import Main from '../Main/Main';
 import BreadList from '../BreadList/BreadList';
 import BreadDetail from '../BreadDetail/BreadDetail';
 import './App.css';
+import 'leaflet/dist/leaflet.css';
 
 function App() {
   return (
