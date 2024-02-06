@@ -3,6 +3,7 @@ import './Main.css';
 import MapComponent from '../Map/Map';
 
 const Main = () => {
+
   return (
     <div className="main">
       <div className="map-container">

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import countriesGeoJson from '../../data/countries.json';
+import { useNavigate } from 'react-router-dom';
 import './Map.css';
 
 const MapComponent = () => {
@@ -19,6 +20,7 @@ const MapComponent = () => {
 
 const GeoJSONLayer = () => {
   const map = useMap();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const geoJsonLayer = L.geoJSON(countriesGeoJson as any, {
@@ -30,46 +32,18 @@ const GeoJSONLayer = () => {
         fillOpacity: 0.5
       }),
       onEachFeature: (feature, layer) => {
-
-        layer.on({
-          mouseover: (e) => {
-            var layer = e.target;
-            layer.setStyle({
-              fillColor: "rgba(62, 109, 78, 0.5)",
-              weight: 3,
-              opacity: 1,
-              color: '#3e6d4e',
-              dashArray: '3',
-              fillOpacity: 0.7
-            });
-          },
-          mouseout: (e) => {
-            var layer = e.target;
-            geoJsonLayer.resetStyle(layer);
-          }
+        layer.on('click', () => {
+          const countryName = feature.properties.name;
+          navigate(`/breads/${countryName}`);
         });
-      
-        if (feature.properties && feature.properties.name) {
-          if (layer instanceof L.Polygon || layer instanceof L.Polyline) {
-            const center = layer.getBounds().getCenter();
-            const marker = L.marker(center, {
-              icon: new L.DivIcon({
-                className: 'country-label',
-                html: `<div>${feature.properties.name}</div>`,
-                iconSize: L.point(100, 40),
-                iconAnchor: [40, 20]
-              })
-            });
-            marker.addTo(map)
-          }
-        }
       },
-    })
+    });
+      
 
-    geoJsonLayer.addTo(map)
-  }, [map])
+    geoJsonLayer.addTo(map);
+  }, [map, navigate]);
 
   return null;
 }
 
-export default MapComponent
+export default MapComponent;

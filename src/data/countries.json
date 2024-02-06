@@ -3,7 +3,7 @@
     "features": [
       {
         "type": "Feature",
-        "id": "BRA",
+        "id": "Brazil",
         "properties": {
           "name": "Brazil"
         },
@@ -18,7 +18,7 @@
       },
       {
         "type": "Feature",
-        "id": "FRA",
+        "id": "France",
         "properties": {
           "name": "France"
         },
@@ -40,7 +40,7 @@
       },
       {
         "type": "Feature",
-        "id": "JPN",
+        "id": "Japan",
         "properties": {
           "name": "Japan"
         },
@@ -51,7 +51,7 @@
       },
       {
         "type": "Feature",
-        "id": "SCT",
+        "id": "Scotland",
         "properties": {
           "name": "Scotland"
         },
@@ -95,7 +95,7 @@
       },
       {
         "type": "Feature",
-        "id": "IND",
+        "id": "India",
         "properties": {
           "name": "India"
         },
@@ -107,7 +107,7 @@
       },
       {
         "type": "Feature",
-        "id": "ITA",
+        "id": "Italy",
         "properties": {
           "name": "Italy"
         },
