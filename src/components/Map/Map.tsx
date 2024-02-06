@@ -33,32 +33,17 @@ const GeoJSONLayer = () => {
       }),
       onEachFeature: (feature, layer) => {
         layer.on('click', () => {
-        const countryName = feature.properties.name;
-        navigate(`/breads/${countryName}`);
+          const countryName = feature.properties.name;
+          navigate(`/breads/${countryName}`);
         });
-      
-        if (feature.properties && feature.properties.name) {
-          if (layer instanceof L.Polygon || layer instanceof L.Polyline) {
-            const center = layer.getBounds().getCenter();
-            const marker = L.marker(center, {
-              icon: new L.DivIcon({
-                className: 'country-label',
-                html: `<div>${feature.properties.name}</div>`,
-                iconSize: L.point(100, 40),
-                iconAnchor: [40, 20]
-              })
-            })
-
-
-          }
-        }
       },
-    })
+    });
+      
 
-    geoJsonLayer.addTo(map)
-  }, [map, navigate])
+    geoJsonLayer.addTo(map);
+  }, [map, navigate]);
 
   return null;
 }
 
-export default MapComponent
+export default MapComponent;
