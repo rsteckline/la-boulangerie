@@ -1,6 +1,6 @@
 // BreadList.tsx
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams, useNavigate, Link } from 'react-router-dom';
 import { fetchBreadsForCountry } from '../../apiCalls';
 import './BreadList.css'; 
 import { BreadData, CountryData, ApiResponse } from '../../apiTypes';
@@ -29,11 +29,14 @@ const BreadList = () => {
 
   return (
     <div className="breadList">
-      <h2>Breads from {country.attributes.name}</h2>
-      <p>{country.attributes.description}</p>
-      <ul>
+    <h2>Breads from {country.attributes.name}</h2>
+    <p>{country.attributes.description}</p>
+    <ul>
         {breads.map(bread => (
-          <li key={bread.id}>{bread.attributes.name}</li>
+          <li key={bread.id}>
+            <Link to={`/breads/${countryName}/${bread.id}`}>
+            {bread.attributes.name}</Link>
+          </li>
         ))}
       </ul>
     </div>

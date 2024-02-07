@@ -11,7 +11,7 @@ const MapComponent = () => {
       <TileLayer
         url="https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=a7eda3efcc6b40449d697372a8171c3b"
         attribution='&copy; <a href="http://thunderforest.com">Thunderforest</a> contributors'
-        noWrap={true}
+        noWrap={false}
       />
       <GeoJSONLayer />
     </MapContainer>

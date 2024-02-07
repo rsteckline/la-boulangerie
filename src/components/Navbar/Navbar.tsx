@@ -5,7 +5,7 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <div className="navbar">
-      <h1>Belongea Boulangerie</h1>
+      <h1>Belongea's Boulangerie</h1>
       <Link to="/">Home</Link>
     </div>
   );

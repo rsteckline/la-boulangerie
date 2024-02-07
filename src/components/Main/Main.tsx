@@ -6,8 +6,10 @@ const Main = () => {
 
   return (
     <div className="main">
-      <div className="map-container">
-        <MapComponent />
+      <div className="map-background">
+        <div className="map-container">
+          <MapComponent />
+        </div>
       </div>
     </div>
   );
