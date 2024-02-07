@@ -1,4 +1,35 @@
 .breadList {
-  margin-top: 4rem;
+  margin-top: 8rem;
+  text-align: center;
   font-family: 'Abel', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.breadList h2 {
+  margin-bottom: 3rem;
+}
+
+.breadList p {
+  margin-bottom: 3rem;
+}
+
+.breadList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.breadList li {
+  margin: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+
+.breadList a {
+  text-decoration: none;
+  color: #3e6d4e;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.breadList a:hover {
+  text-decoration: underline;
 }
