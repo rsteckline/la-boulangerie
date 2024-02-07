@@ -23,7 +23,7 @@
     }
  }
   
-MEDIUM BREAKPOINT (altered for map filling container)
+/* MEDIUM BREAKPOINT (altered for map filling container) */
 @media screen and (max-width: 1195px) and (min-width: 750px) {
     .map-background {
         width: 90%;
