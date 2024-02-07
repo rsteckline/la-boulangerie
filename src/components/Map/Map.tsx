@@ -25,7 +25,7 @@ const GeoJSONLayer = () => {
   useEffect(() => {
     const geoJsonLayer = L.geoJSON(countriesGeoJson as any, {
       style: () => ({
-        fillColor: "rgba(62, 109, 78, 0.5)",
+        fillColor: "#161F3B",
         color: '#3e6d4e',
         weight: 1,
         dashArray: '3',
