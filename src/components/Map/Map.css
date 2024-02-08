@@ -16,9 +16,11 @@
     display: flex;
     justify-content: center;
 }
+
 /* SMALL BREAKPOINT */
 @media screen and (max-width: 750px) {
     .map-background {
+        margin-bottom: 10rem;
         width: 95%;
     }
  }
@@ -27,5 +29,6 @@
 @media screen and (max-width: 1195px) and (min-width: 750px) {
     .map-background {
         width: 90%;
+        
     }
 }

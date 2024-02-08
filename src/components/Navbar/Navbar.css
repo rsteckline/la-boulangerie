@@ -17,11 +17,16 @@
     font-size: 2rem;
     color: #000000;
 }
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+}
     
 .navbar a {
     color: #000000;
     text-decoration: none;
-    padding: 0.5rem 0;
+    padding: 0.5rem;
     font-size: 2rem;
 }
     
