@@ -37,3 +37,12 @@
     }
  }
   
+
+ /* MEDIUM BREAKPOINT */
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+
+}
+
+/* LARGE BREAKPOINT */
+@media screen and (min-width: 1025px) {
+}
