@@ -1,32 +1,45 @@
+/*SMALL BREAKPOINT */
 .BreadDetail {
-    margin-top: 8rem;
+    margin-top: 1rem;
     text-align: center;
     font-family: 'Abel', sans-serif;
     margin-bottom: 1rem;
 }
 
+/* .BreadDetail::before {
+    margin-top: 1rem;
+    text-align: center;
+    font-family: 'Abel', sans-serif;
+    margin-bottom: 1rem;
+    height: calc(100vh -  95px);
+    
+} */
+
 .BreadDetail > h2 {
     margin-bottom: 3rem;
     font-family: 'Satisfy', cursive;
+    font-size: 3rem;
 }
 
 .BreadDetail h3 {
     margin-bottom: 3rem;
+    font-size: 1.5rem;
 }
   
 .BreadDetail p {
     margin-bottom: 3rem;
 }
 
-
 .recipeSection {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    /* height: calc(100vh -  95px); */
     background-image: url('/public/shutterstock_174816359.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     content: "";
+    position: absolute;
     align-items: center;
     justify-content: center;
 }
@@ -39,5 +52,26 @@
     display: flex;
     align-items: center;
     font-size: 2rem;
-    padding: 1.5rem
+    padding: 1.5rem;
+    border-radius: 65px;
+}
+
+/* MEDIUM BREAKPOINT */
+@media screen and (min-width: 750px) and (max-width: 1024px) {
+    .BreadDetail {
+        margin-top: 8rem;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        margin-bottom: 1rem;
+    }
+}
+
+/* LARGE BREAKPOINT */
+@media screen and (min-width: 1025px) {
+    .BreadDetail {
+        margin-top: 8rem;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        margin-bottom: 1rem;
+    }
 }
