@@ -1,0 +1,106 @@
+{
+  "country": {
+      "data": {
+          "id": "3",
+          "type": "country",
+          "attributes": {
+              "name": "Brazil",
+              "description": "Pão de queijo is a famous Brazilian cheese bread made with cassava flour and cheese, resulting in a chewy and cheesy delight."
+          },
+          "relationships": {
+              "breads": {
+                  "data": [
+                      {
+                          "id": "13",
+                          "type": "bread"
+                      },
+                      {
+                          "id": "14",
+                          "type": "bread"
+                      },
+                      {
+                          "id": "15",
+                          "type": "bread"
+                      },
+                      {
+                          "id": "16",
+                          "type": "bread"
+                      }
+                  ]
+              }
+          }
+      }
+  },
+  "breads": {
+      "data": [
+          {
+              "id": "13",
+              "type": "bread",
+              "attributes": {
+                  "name": "Pão de Queijo",
+                  "description": "Pão de queijo is a famous Brazilian cheese bread made with cassava flour and cheese, resulting in a chewy and cheesy delight.",
+                  "recipe": "Ingredients: 500g tapioca flour 250ml milk 125g butter 10g salt 2 eggs 200g grated cheese Instructions: Boil milk with butter and salt. Pour over tapioca flour and mix. Let it cool, then add eggs and cheese. Form small balls and bake at 375°F (190°C) for 15-20 minutes."
+              },
+              "relationships": {
+                  "country": {
+                      "data": {
+                          "id": "3",
+                          "type": "country"
+                      }
+                  }
+              }
+          },
+          {
+              "id": "14",
+              "type": "bread",
+              "attributes": {
+                  "name": "Beiju",
+                  "description": "Beiju is a traditional Brazilian flatbread made from tapioca flour. It's thin, crispy, and versatile, often served with sweet or savory toppings.",
+                  "recipe": "Ingredients: Tapioca flour Water Salt Toppings of choice Instructions: Mix tapioca flour with water and a pinch of salt. Cook the mixture on a hot griddle until it forms a thin, crispy layer. Add your favorite toppings and enjoy!"
+              },
+              "relationships": {
+                  "country": {
+                      "data": {
+                          "id": "3",
+                          "type": "country"
+                      }
+                  }
+              }
+          },
+          {
+              "id": "15",
+              "type": "bread",
+              "attributes": {
+                  "name": "Bolo de Milho",
+                  "description": "Bolo de milho, or cornbread, is a popular Brazilian treat. It's sweet, moist, and often enjoyed with a cup of coffee or as a dessert.",
+                  "recipe": "Ingredients: 250g cornmeal 250ml milk 2 eggs 100g sugar 50g butter 1 tsp baking powder Instructions: Mix cornmeal, sugar, and baking powder. Add eggs, milk, and melted butter. Bake in a greased pan at 350°F (180°C) for 30-35 minutes."
+              },
+              "relationships": {
+                  "country": {
+                      "data": {
+                          "id": "3",
+                          "type": "country"
+                      }
+                  }
+              }
+          },
+          {
+              "id": "16",
+              "type": "bread",
+              "attributes": {
+                  "name": "Broa",
+                  "description": "Broa is a traditional Brazilian cornbread made with a mix of cornmeal and wheat flour. It has a dense texture and is commonly served with savory dishes.",
+                  "recipe": "Ingredients: 300g cornmeal 200g wheat flour 250ml milk 100g sugar 50g butter 1 tsp baking powder Instructions: Mix cornmeal, wheat flour, sugar, and baking powder. Add melted butter and milk. Bake in a greased pan at 350°F (180°C) for 25-30 minutes."
+              },
+              "relationships": {
+                  "country": {
+                      "data": {
+                          "id": "3",
+                          "type": "country"
+                      }
+                  }
+              }
+          }
+      ]
+  }
+}
