@@ -5,6 +5,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    height: 95px;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -14,15 +15,22 @@
     
 .navbar h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #000000;
+}
+
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
 }
     
 .navbar a {
     color: #000000;
     text-decoration: none;
-    padding: 0.5rem 0;
-    font-size: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
 }
     
 .navbar a:hover {
@@ -37,3 +45,46 @@
     }
  }
   
+
+/* IPAD BREAKPOINT*/
+@media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
+	.navbar {
+		position: unset;
+		bottom: unset;
+		left: unset;
+		width: unset;
+		z-index: unset;
+	}
+
+    .navbar a {
+        font-size: 2rem;
+    }
+    
+    .navbar h1 {
+        font-size: 2rem;
+    }
+}
+
+
+ /* MEDIUM BREAKPOINT */
+@media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: portrait) {
+    .navbar a {
+        font-size: 2rem;
+    }
+    
+    .navbar h1 {
+        font-size: 2rem;
+    }
+
+}
+
+/* LARGE BREAKPOINT */
+@media screen and (min-width: 1025px) and (orientation: landscape){
+    .navbar a {
+        font-size: 2rem;
+    }
+    
+    .navbar h1 {
+        font-size: 2rem;
+    }
+}

@@ -28,17 +28,21 @@ const BreadList = () => {
   if (!country) return <div>Loading...</div>;
 
   return (
-    <div className="breadList">
+    <div className="BreadListWrapper">
     <h2>Breads from {country.attributes.name}</h2>
     <p>{country.attributes.description}</p>
+    <section className='listSection'>
+      <div className='listDetail'>
     <ul>
         {breads.map(bread => (
           <li key={bread.id}>
-            <Link to={`/breads/${countryName}/${bread.id}`}>
+            <Link to={`/breads/${countryName}/${bread.attributes.name}`}>
             {bread.attributes.name}</Link>
           </li>
         ))}
       </ul>
+      </div>
+      </section>
     </div>
   );
 };
