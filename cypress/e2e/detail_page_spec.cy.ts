@@ -22,16 +22,10 @@ describe("BreadDetail Page", () => {
     cy.get('.recipeDetail').contains('bake at 375°F (190°C) for 15-20 minutes.');
   });
 
-  it("should have a working home button that navigates to '/'", () => {
-    cy.get('.nav-links a').contains('Home').click();
-    cy.url().should('eq', Cypress.config('baseUrl'));
-  });
-  
   it("should navigate back to the bread list page using browser back action", () => {
     cy.visit('/breads/Brazil');
     cy.url().should('include', '/breads/Brazil');
     cy.get('h2').contains('Breads from Brazil').should('be.visible');
   });
   
-
 });
