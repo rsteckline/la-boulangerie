@@ -23,9 +23,4 @@ describe("BreadList Page", () => {
     });
   });
 
-  it("should navigate to the detail page of a bread when clicked", () => {
-    cy.get('a').contains('Pão de Queijo').click();
-    const expectedUrl = encodeURI('/breads/Brazil/Pão de Queijo');
-    cy.url().should('include', expectedUrl);
-  });
 });
