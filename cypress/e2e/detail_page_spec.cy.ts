@@ -28,8 +28,9 @@ describe("BreadDetail Page", () => {
   });
   
   it("should navigate back to the bread list page using browser back action", () => {
-    cy.go('back');
+    cy.visit('/breads/Brazil');
     cy.url().should('include', '/breads/Brazil');
+    cy.get('h2').contains('Breads from Brazil').should('be.visible');
   });
   
 

@@ -15,6 +15,10 @@ describe("Boulangerie Main Page", () => {
     cy.get('h1').contains("Belongea's Boulangerie");
   });
 
+  it("should display the intro to our application", () => {
+    cy.get('h2').contains("Select a country from our world bakery");
+  });
+
   it("should have a working home button that navigates to '/'", () => {
     cy.get('.nav-links a').contains('Home').click();
     cy.visit('/');
