@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    background-color: #d0c5b9;
 }
   
 .main {
@@ -9,4 +10,23 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.map-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+    align-items: center;
+   
+}
+
+.map-wrapper >h2 {
+    font-size: large;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
+    .map-wrapper >h2 {
+        font-size: xx-large;
+    }
 }
