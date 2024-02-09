@@ -6,17 +6,8 @@
     margin-bottom: 1rem;
 }
 
-/* .BreadDetail::before {
-    margin-top: 1rem;
-    text-align: center;
-    font-family: 'Abel', sans-serif;
-    margin-bottom: 1rem;
-    height: calc(100vh -  95px);
-    
-} */
-
 .BreadDetail > h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
     font-family: 'Satisfy', cursive;
     font-size: 3rem;
 }
@@ -28,15 +19,17 @@
   
 .BreadDetail p {
     margin-bottom: 3rem;
+    font-size: .5rem;
 }
 
 .recipeSection {
     width: 100vw;
-    height: 100%;
-    /* height: calc(100vh -  95px); */
+    height: 70vh;
+    height: calc(100vh -  360px);
     background-image: url('/public/shutterstock_174816359.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     display: flex;
     content: "";
     position: absolute;
@@ -51,20 +44,80 @@
     width: 80%;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+    font-size: x-large;
     padding: 1.5rem;
     border-radius: 65px;
+    overflow-y: auto;
+    padding-top: 2rem;
 }
 
-/* MEDIUM BREAKPOINT */
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+/* SMALL - MEDIUM BREAKPOINT */
+@media screen and (min-width: 470px), (max-width: 700) {
     .BreadDetail {
-        margin-top: 8rem;
+        margin-top: 1rem;
         text-align: center;
         font-family: 'Abel', sans-serif;
         margin-bottom: 1rem;
     }
+
+    .recipeSection {
+        height: calc(100vh - 337px);
+    }
+
+    .recipeDetail {
+        font-size: 2rem;
+    }
 }
+
+/* RESPONSIVE MEDIUM BREAKPOINT */
+@media screen and (min-width: 700px), (max-width: 750px ) {
+    .BreadDetail {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .recipeSection {
+        height: calc(100vh - 305px);
+    }
+
+    .recipeDetail {
+        font-size: 2rem;
+    }
+}
+
+/* iPhone 12 Pro BREAKPOINT */
+@media screen and (min-width: 390px), (max-width: 469px){
+    .BreadDetail {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .recipeDetail {
+        font-size: 1.1rem;
+    }
+}
+
+/* IPAD BREAKPOINT:: needs refactor, breaking change for small breakpoint for iphone*/
+/* @media screen and (min-width: 750px), (max-width: 1024px ) {
+    .BreadDetail {
+        margin-top: 1rem;
+        text-align: center;
+        font-family: 'Abel', sans-serif;
+        margin-bottom: 1rem;
+    }
+
+    .recipeSection {
+        height: calc(100vh - 304px);
+    }
+
+    .recipeDetail {
+        font-size: 2rem;
+    }
+} */
 
 /* LARGE BREAKPOINT */
 @media screen and (min-width: 1025px) {
