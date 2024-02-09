@@ -1,35 +1,89 @@
-.BreadList {
-  margin-top: 8rem;
+.BreadListWrapper {
+  margin-top: 5rem;
   text-align: center;
-  font-family: 'Abel', sans-serif;
   margin-bottom: 1rem;
 }
 
-.BreadList h2 {
+.BreadListWrapper h2 {
   margin-bottom: 3rem;
 }
 
-.BreadList p {
-  margin-bottom: 3rem;
+.BreadListWrapper p {
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  font-family: 'Abel', sans-serif;
 }
 
-.BreadList ul {
+.BreadListWrapper ul {
   list-style-type: none;
   padding: 0;
 }
 
-.BreadList li {
+.BreadListWrapper li {
   margin: 0.5rem 0;
   margin-bottom: 1rem;
 }
 
-.BreadList a {
+.BreadListWrapper a {
   text-decoration: none;
-  color: #3e6d4e;
+  color: black;
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
-.BreadList a:hover {
+.BreadListWrapper a:hover {
   text-decoration: underline;
+  color: white
+}
+
+.listSection {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+  height: calc(100vh -  350px);
+  background-image: url('/public/shutterstock_1544878508.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  content: "";
+  position: absolute;
+  align-items: center;
+}
+
+.listDetail {
+  background-color: rgba(231, 171, 134, 0.7);
+  font-family: 'Abel', sans-serif;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  padding: 1.5rem;
+  border-radius: 65px;
+  overflow-y: auto;
+  padding-top: 2rem;
+  display:flex;
+  justify-content: center;
+}
+
+/* MEDIUM BREAKPOINT */
+@media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: landscape) {
+  .BreadListWrapper {
+    margin-top: 4rem
+  }
+}
+
+/* LARGE BREAKPOINT */
+@media screen and (min-width: 1025px) and (orientation: landscape){
+  .BreadListWrapper h2 {
+    margin-top: 5rem
+  }
+
+  .listDetail {
+    font-size: xx-large;
+  }
+
 }

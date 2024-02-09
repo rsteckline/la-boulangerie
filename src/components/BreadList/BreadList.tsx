@@ -28,9 +28,11 @@ const BreadList = () => {
   if (!country) return <div>Loading...</div>;
 
   return (
-    <div className="BreadList">
+    <div className="BreadListWrapper">
     <h2>Breads from {country.attributes.name}</h2>
     <p>{country.attributes.description}</p>
+    <section className='listSection'>
+      <div className='listDetail'>
     <ul>
         {breads.map(bread => (
           <li key={bread.id}>
@@ -39,6 +41,8 @@ const BreadList = () => {
           </li>
         ))}
       </ul>
+      </div>
+      </section>
     </div>
   );
 };
