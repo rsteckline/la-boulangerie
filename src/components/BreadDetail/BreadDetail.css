@@ -51,6 +51,10 @@
     padding-top: 2rem;
 }
 
+.recipeDetail > p {
+    padding-top: 4rem;
+}
+
 /* SMALL - MEDIUM BREAKPOINT */
 @media screen and (min-width: 470px) and (max-width: 700) and (orientation: portrait){
     .BreadDetail {
