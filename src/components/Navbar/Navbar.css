@@ -67,7 +67,7 @@
 
 
  /* MEDIUM BREAKPOINT */
-@media screen and (min-width: 750px) and (max-width: 1024px) {
+@media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: portrait) {
     .navbar a {
         font-size: 2rem;
     }
@@ -79,7 +79,7 @@
 }
 
 /* LARGE BREAKPOINT */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1025px) and (orientation: landscape){
     .navbar a {
         font-size: 2rem;
     }
