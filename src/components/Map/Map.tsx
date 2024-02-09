@@ -5,10 +5,10 @@ import countriesGeoJson from '../../data/countries.json';
 import { useNavigate } from 'react-router-dom';
 import './Map.css';
 
-const maxBounds = L.latLngBounds(
-  L.latLng(-90, -180),
-  L.latLng(90, 180)
-);
+// const maxBounds = L.latLngBounds(
+//   L.latLng(-90, -180),
+//   L.latLng(90, 180)
+// );
 
 const MapComponent = () => {
   return (
