@@ -40,7 +40,7 @@ const BreadDetail = () => {
 	if (!breadDetail) return <div>Loading...</div>;
 
 	return (
-		<div className='recipeWrapper'>
+		<div>
 			<section className="BreadDetail">
 				<h2>{breadDetail.name}</h2>
 				<h3>{breadDetail.description}</h3>
