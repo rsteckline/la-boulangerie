@@ -47,7 +47,7 @@
   
 
 /* IPAD BREAKPOINT needs rework, applying to iphone size rn */
-/* @media screen and (min-width: 750px), (max-width: 1024px ) {
+@media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
 	.navbar {
 		position: unset;
 		bottom: unset;
@@ -63,7 +63,7 @@
     .navbar h1 {
         font-size: 2rem;
     }
-} */
+}
 
 
  /* MEDIUM BREAKPOINT */
