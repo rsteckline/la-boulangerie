@@ -72,14 +72,16 @@
 /* MEDIUM BREAKPOINT */
 @media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: landscape) {
   .BreadListWrapper {
-    margin-top: 4rem
+    margin-top: 4rem;
+    font-size: xx-large;
   }
 }
 
 /* LARGE BREAKPOINT */
 @media screen and (min-width: 1025px) and (orientation: landscape){
   .BreadListWrapper h2 {
-    margin-top: 5rem
+    margin-top: 5rem;
+    font-size: xx-large;
   }
 
   .listDetail {
