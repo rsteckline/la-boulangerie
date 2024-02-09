@@ -29,4 +29,17 @@ body, html {
     .map-wrapper >h2 {
         font-size: xx-large;
     }
+
+    
+}
+
+/* LARGE BREAKPOINT */
+@media screen and (min-width: 1025px) {
+    .map-wrapper {
+        padding-top: 5rem;
+    }
+
+    .map-wrapper >h2 {
+        font-size: xx-large;
+    }
 }
