@@ -17,7 +17,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/breads/:id" element={<BreadList />} />
           <Route path="/breads/:id/:breadId" element={<BreadDetail />} />
-          <Route path="/*" element={<Error />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </div>
     </BrowserRouter>
