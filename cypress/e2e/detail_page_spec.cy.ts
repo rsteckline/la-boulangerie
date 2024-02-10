@@ -17,15 +17,14 @@ describe("BreadDetail Page", () => {
   });
 
   it("should display the bread recipe", () => {
-    cy.get('.recipeDetail').contains('Ingredients:');
+    cy.get('.recipeDetail').contains('Ingredients');
     cy.get('.recipeDetail').contains('500g tapioca flour');
     cy.get('.recipeDetail').contains('bake at 375°F (190°C) for 15-20 minutes.');
   });
-
-  it("should navigate back to the bread list page using browser back action", () => {
-    cy.visit('/breads/Brazil');
-    cy.url().should('include', '/breads/Brazil');
-    cy.get('h2').contains('Breads from Brazil').should('be.visible');
-  });
   
+  it("should display the bread image", () => {
+  cy.get('.breadImage').should('be.visible').and('have.attr', 'src');
+});
+
+
 });

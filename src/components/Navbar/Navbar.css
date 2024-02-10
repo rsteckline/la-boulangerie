@@ -37,7 +37,8 @@
     text-decoration: underline;
     color: white
 }
-    
+
+/* RESETTING THE NAV ORIENTATION */ 
 @media screen and (min-width: 750px) {
     .navbar {
       top: 0;
@@ -46,8 +47,8 @@
  }
   
 
-/* IPAD BREAKPOINT*/
-@media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
+/* IPAD BREAKPOINT */
+@media screen and (min-width: 750px) and (max-width: 1023px ) and (orientation: portrait) {
 	.navbar {
 		position: unset;
 		bottom: unset;
@@ -67,7 +68,7 @@
 
 
  /* MEDIUM BREAKPOINT */
-@media screen and (min-width: 750px) and (max-width: 1024px) and (orientation: portrait) {
+@media screen and (min-width: 750px) and (max-width: 1025px) and (orientation:landscape){
     .navbar a {
         font-size: 2rem;
     }
@@ -79,7 +80,7 @@
 }
 
 /* LARGE BREAKPOINT */
-@media screen and (min-width: 1025px) and (orientation: landscape){
+@media screen and (min-width: 1022px) and (orientation: landscape){
     .navbar a {
         font-size: 2rem;
     }

@@ -1,35 +1,30 @@
-// BreadDetail.tsx
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { fetchBreadsForCountry } from "../../apiCalls";
 import "./BreadDetail.css";
 import { BreadAttributes } from "../../apiTypes";
 
 const BreadDetail = () => {
-    const { id: countryName, breadId } = useParams<{
-        id: string;
-        breadId: string;
-    }>();
+    const { id: countryName, breadId } = useParams<{ id: string; breadId: string; }>();
     const [breadDetail, setBreadDetail] = useState<BreadAttributes | null>(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         if (countryName) {
-            console.log(`Fetching bread detail for ${breadId} from ${countryName}...`);
             fetchBreadsForCountry(countryName)
                 .then((data) => {
-                    console.log("Bread detail data:", data);
                     const bread = data.breads.data.find(bread => bread.attributes.name === breadId);
                     if (bread) {
                         setBreadDetail(bread.attributes);
                     } else {
-                        console.error(`Bread with ID ${breadId} not found.`);
+                        navigate('/error'); // Redirect to error page
                     }
                 })
                 .catch((error) => {
-                    console.error("Fetching error:", error);
+                    navigate('/error'); // Redirect to error page
                 });
         }
-    }, [countryName, breadId]);
+    }, [countryName, breadId, navigate]);
 
     if (!breadDetail) return <div>Loading...</div>;
 
