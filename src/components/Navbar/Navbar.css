@@ -82,10 +82,10 @@
 /* LARGE BREAKPOINT */
 @media screen and (min-width: 1022px) and (orientation: landscape){
     .navbar a {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     .navbar h1 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
