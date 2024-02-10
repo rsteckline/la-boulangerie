@@ -12,7 +12,8 @@ export interface BreadAttributes {
   
 export interface CountryAttributes {
     name: string;
-    description: string;
+    overview: string;
+    culinary: string;
 }
   
 export interface BreadData {

@@ -30,7 +30,8 @@ const BreadList = () => {
   return (
     <div className="BreadListWrapper">
     <h2>Breads from {country.attributes.name}</h2>
-    <p>{country.attributes.description}</p>
+    <p>{country.attributes.overview}</p>
+    <p>{country.attributes.culinary}</p>
     <section className='listSection'>
       <div className='listDetail'>
     <ul>
