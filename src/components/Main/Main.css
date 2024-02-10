@@ -25,6 +25,15 @@ body, html {
     font-size: large;
 }
 
+.error-message {
+    margin-top: 20%;
+  }
+  
+.error-container {
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
     .map-wrapper >h2 {
         font-size: xx-large;
