@@ -6,52 +6,58 @@ import "./BreadDetail.css";
 import { BreadAttributes } from "../../apiTypes";
 
 const BreadDetail = () => {
-	const { id: countryName, breadId: breadName } = useParams<{
-		id: string;
-		breadId: string;
-	}>();
-	const [breadDetail, setBreadDetail] = useState<BreadAttributes | null>(null);
+    const { id: countryName, breadId } = useParams<{
+        id: string;
+        breadId: string;
+    }>();
+    const [breadDetail, setBreadDetail] = useState<BreadAttributes | null>(null);
 
-	useEffect(() => {
-		if (countryName && breadName) {
-			console.log(
-				`Fetching bread detail for ${breadName} from ${countryName}...`
-			);
-			fetchBreadsForCountry(countryName)
-				.then((data) => {
-					console.log("Bread detail data:", data);
-					const bread = data.breads.data.find(
-						(bread) => bread.attributes.name === breadName
-					);
-					if (bread) {
-						setBreadDetail(bread.attributes);
-					} else {
-						console.error(`Bread with name ${breadName} not found.`);
-					}
-				})
-				.catch((error) => {
-					console.error("Fetching error:", error);
-				});
-		}
-	}, [countryName, breadName]);
+    useEffect(() => {
+        if (countryName) {
+            console.log(`Fetching bread detail for ${breadId} from ${countryName}...`);
+            fetchBreadsForCountry(countryName)
+                .then((data) => {
+                    console.log("Bread detail data:", data);
+                    const bread = data.breads.data.find(bread => bread.attributes.name === breadId);
+                    if (bread) {
+                        setBreadDetail(bread.attributes);
+                    } else {
+                        console.error(`Bread with ID ${breadId} not found.`);
+                    }
+                })
+                .catch((error) => {
+                    console.error("Fetching error:", error);
+                });
+        }
+    }, [countryName, breadId]);
 
-	console.log("Bread detail:", breadDetail);
+    if (!breadDetail) return <div>Loading...</div>;
 
-	if (!breadDetail) return <div>Loading...</div>;
-
-	return (
-		<div className='recipeWrapper'>
-			<section className="BreadDetail">
-				<h2>{breadDetail.name}</h2>
-				<h3>{breadDetail.description}</h3>
-			</section>
-      <section className='recipeSection'>
-        <div className="recipeDetail">
-          <p><strong>Recipe:</strong> {breadDetail.recipe}</p>
+    return (
+        <div className='recipeWrapper'>
+            <section className="BreadDetail">
+                <h2>{breadDetail.name}</h2>
+                <h3>{breadDetail.description}</h3>
+                <img src={breadDetail.imageUrl} alt={breadDetail.name} className='breadImage'/>
+            </section>
+            <section className='recipeSection'>
+                <div className="recipeDetail">
+                    <h4>Ingredients</h4>
+                    <ul>
+                        {breadDetail.recipe.ingredients.map((ingredient, index) => (
+                            <li key={index}>{ingredient}</li>
+                        ))}
+                    </ul>
+                    <h4>Instructions</h4>
+                    <ol>
+                        {breadDetail.recipe.instructions.map((instruction, index) => (
+                            <li key={index}>{instruction}</li>
+                        ))}
+                    </ol>
+                </div>
+            </section>
         </div>
-      </section>
-		</div>
-	);
+    );
 };
 
 export default BreadDetail;
