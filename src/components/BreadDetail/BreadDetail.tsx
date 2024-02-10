@@ -42,7 +42,6 @@ const BreadDetail = () => {
             </section>
             <section className='recipeSection'>
                 <div className="recipeDetail">
-                    <p><strong>Recipe:</strong></p>
                     <h4>Ingredients</h4>
                     <ul>
                         {breadDetail.recipe.ingredients.map((ingredient, index) => (
