@@ -11,9 +11,21 @@ describe("BreadList Page", () => {
     cy.visit('/breads/Brazil');
   });
 
-  it("should display the country name and description", () => {
+  it("should return to the main page when the Home button is clicked", () => {
+    cy.contains('Home').click();
+    cy.location("pathname").should("eq", "/");
+  });
+
+  it("should display the country name", () => {
     cy.get('h2').contains('Breads from Brazil');
-    cy.get('p').contains('Pão de queijo is a famous Brazilian cheese bread');
+  });
+
+  it("should display the country history", () => {
+    cy.get('p').contains('Brazil, the largest country in South America,');
+  });
+
+  it("should display the country culinary history", () => {
+    cy.get('p').contains('Brazil\'s culinary history is a vibrant tapestry of flavors,');
   });
 
   it("should list the breads for that country", () => {

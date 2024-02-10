@@ -1,15 +1,14 @@
-// BreadList.tsx
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { fetchBreadsForCountry } from '../../apiCalls';
 import './BreadList.css'; 
 import { BreadData, CountryData, ApiResponse } from '../../apiTypes';
 
 const BreadList = () => {
-  const navigate = useNavigate();
   const { id: countryName } = useParams();
   const [breads, setBreads] = useState<BreadData[]>([]);
   const [country, setCountry] = useState<CountryData | null>(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (countryName) {
@@ -19,8 +18,7 @@ const BreadList = () => {
           setBreads(data.breads.data);
         })
         .catch(error => {
-          console.error("Fetching error:", error);
-          navigate('/');
+          navigate('/error'); // Redirect to error page
         });
     }
   }, [countryName, navigate]);
