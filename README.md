@@ -77,7 +77,7 @@ This project was created in an 11 day sprint and is currently in v1 stage of the
   
 <details>
 <summary>
-eyes: Preview of App
+:eyes: Preview of App
  
 </summary>
 <div align="center">
