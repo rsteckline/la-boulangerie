@@ -6,26 +6,39 @@ const Navbar = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const isLoggedIn = false;
+
   const handleBack = () => {
     navigate(-1);
   };
 
-  const isDetailPage = location.pathname.includes('/breads/') && location.pathname.split('/').length > 3;
+  const isDetailPage = location.pathname.includes('/breads/') && location.pathname.split('/').length >= 3;
 
   return (
     <div className="navbar">
-      <h1>Belongea's Boulangerie</h1>
+      <h1>
+        <Link to="/" className="app-title">Belongea's Boulangerie</Link>
+      </h1>
       <div className="nav-links">
         {isDetailPage && (
           <Link to="#" onClick={handleBack} className="back-link">
             Back
           </Link>
         )}
-          <Link to="/">Home</Link>
+        {!isLoggedIn ? (
+          <>
+            <Link to="/create-account">Create Account</Link>
+            <Link to="/login">Login</Link>
+          </>
+        ) : (
+          <>
+            <Link to="/breadbox">BreadBox</Link>
+            <button onClick={() => console.log('Log out')}>Logout</button>
+          </>
+        )}
       </div>
     </div>
   );
 };
-
 
 export default Navbar;
