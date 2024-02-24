@@ -21,7 +21,7 @@ function LoginForm() {
           <form onSubmit={handleSubmit}>
             <input 
                 type="email" 
-                name="email" 
+                name="name" 
                 placeholder="Email"
                 value={credentials.email} 
                 onChange={handleChange} 
