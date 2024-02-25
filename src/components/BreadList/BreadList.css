@@ -89,8 +89,9 @@
 @media screen and (min-width: 1025px){
   .BreadListWrapper h2 {
     margin-top: 2rem;
-    font-size: xx-large;
+    font-size: 2rem;
     margin-bottom: 1rem;
+    margin-top: 3rem;
   }
 
   .BreadListWrapper p {
