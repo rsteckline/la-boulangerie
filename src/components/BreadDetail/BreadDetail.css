@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /*SMALL BREAKPOINT */
 .BreadDetail {
     margin-top: 3rem;

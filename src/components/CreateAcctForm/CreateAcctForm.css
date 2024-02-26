@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .acct-form-container {
   display: flex;
   flex-direction: column;

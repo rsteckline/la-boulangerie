@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* SMALL BREAKPOINTS */
 .BreadListWrapper {
   margin-top: 2rem;
