@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .navbar a {
-	@apply text-black no-underline text-[0.9rem] p-2 hover:underline hover:text-[white] md:text-xl lg:text-2xl;
+	@apply text-black no-underline text-[0.9rem] p-2 hover:underline hover:text-[white] md:text-xl lg:text-3xl;
 }
 
 /* RESETTING THE NAV ORIENTATION */
