@@ -2,95 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.navbar {
-    background-color: #82aa9f;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3rem;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1rem;
-}
-    
-.navbar h1 {
-    margin: 0;
-    font-size: 1rem;
-    color: #000000;
-}
-
-.navbar .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 30%;
-}
-    
 .navbar a {
-    color: #000000;
-    text-decoration: none;
-    padding: 0.5rem;
-    font-size: .9rem;
-}
-    
-.navbar a:hover {
-    text-decoration: underline;
-    color: white
+	@apply text-black no-underline text-[0.9rem] p-2 hover:underline hover:text-[white] md:text-xl lg:text-2xl;
 }
 
-/* RESETTING THE NAV ORIENTATION */ 
+/* RESETTING THE NAV ORIENTATION */
 @media screen and (min-width: 750px) {
-    .navbar {
-      top: 0;
-      bottom: auto;
-    }
- }
-  
-
-/* IPAD BREAKPOINT */
-@media screen and (min-width: 750px) and (max-width: 1023px ) and (orientation: portrait) {
 	.navbar {
-		position: unset;
-		bottom: unset;
-		left: unset;
-		width: unset;
-		z-index: unset;
+		@apply top-0 bottom-auto;
 	}
-
-    .navbar a {
-        font-size: 2rem;
-    }
-    
-    .navbar h1 {
-        font-size: 2rem;
-    }
-}
-
-
- /* MEDIUM BREAKPOINT */
-@media screen and (min-width: 750px) and (max-width: 1025px) and (orientation:landscape){
-    .navbar a {
-        font-size: 2rem;
-    }
-    
-    .navbar h1 {
-        font-size: 2rem;
-    }
-
-}
-
-/* LARGE BREAKPOINT */
-@media screen and (min-width: 1022px) and (orientation: landscape){
-    .navbar a {
-        font-size: 2rem;
-    }
-    
-    .navbar h1 {
-        font-size: 2rem;
-    }
 }
