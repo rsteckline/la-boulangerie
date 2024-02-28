@@ -17,7 +17,7 @@ const Navbar = () => {
     location.pathname.split("/").length >= 3;
 
   return (
-    <div className="navbar bg-[#82aa9f] shadow-[0_-2px_4px_rgba(0,0,0,0.1)] fixed w-full h-14 z-[1000] flex justify-between items-center p-4 left-0 bottom-0">
+    <div className="navbar bg-[#82aa9f] shadow-[-0_-0.5rem_1.5rem_rgba(0,0,0,0.15)] md:shadow-[0_0.5rem_1.5rem_rgba(0,0,0,0.15)] fixed w-full h-14 z-[1000] flex justify-between items-center p-4 left-0 bottom-0">
       <h1>
         <Link to="/" className="app-title">
           Belongea's Boulangerie
