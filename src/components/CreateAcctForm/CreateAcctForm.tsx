@@ -19,11 +19,11 @@ function CreateAcctForm() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center bg-white bg-opacity-80 shadow rounded-lg p-8 my-20 mx-auto w-9/12 max-w-2xl lg:w-8/12 lg:max-w-5xl gap-5 font-satisfy">
+    <div className="flex flex-col items-center justify-center bg-white bg-opacity-80 shadow rounded-lg p-8 my-20 mx-auto w-9/12 max-w-2xl lg:w-8/12 lg:max-w-5xl gap-5">
       <h2 className="text-2xl text-center">Create Account</h2>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-1 w-full"
+        className="flex flex-col items-center justify-center gap-1 w-full font-abel"
       >
         <div className="container mx-auto px-4 item-center">
           <input
