@@ -1,5 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
-  background-color: #d0c5b9;
+  background: linear-gradient(#D0C5B9, #E7AB86 30%, #DC7333);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

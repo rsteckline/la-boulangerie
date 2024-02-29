@@ -1,26 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body, html {
-    margin: 0;
-    padding: 0;
-    background-color: #d0c5b9;
+    background: linear-gradient(#D0C5B9, #E7AB86 30%, #DC7333);
 }
-  
-.main {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.map-wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 90%;
-    width: 90%;
-    align-items: center;
-    margin-top: 3rem;
-}
-
 .error-message {
     margin-top: 20%;
   }
@@ -28,21 +12,4 @@ body, html {
 .error-container {
     display: flex;
     justify-content: center;
-}
-
-@media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
-    .map-wrapper >h2 {
-        font-size: 2rem;
-    }
-}
-
-/* LARGE BREAKPOINT */
-@media screen and (min-width: 1025px) {
-    .map-wrapper {
-        padding-top: 2rem;
-    }
-
-    .map-wrapper >h2 {
-        font-size: 2rem;
-    }
 }
