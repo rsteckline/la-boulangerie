@@ -26,7 +26,7 @@ export interface CountryData {
     id: string;
     type: string;
     attributes: CountryAttributes;
-  }
+}
   
 export interface ApiResponse {
     country: {
@@ -35,4 +35,13 @@ export interface ApiResponse {
     breads: {
       data: BreadData[];
     };
+}
+
+export interface UserCredentials {
+  email: string;
+  password: string;
+}
+
+export interface NewUser extends UserCredentials {
+  name: string;
 }

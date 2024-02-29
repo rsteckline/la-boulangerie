@@ -5,6 +5,9 @@ import Main from '../Main/Main';
 import BreadList from '../BreadList/BreadList';
 import BreadDetail from '../BreadDetail/BreadDetail';
 import Error from "../Error/Error";
+import CreateAcctForm from '../CreateAcctForm/CreateAcctForm';
+import LoginForm from '../LoginForm/LoginForm';
+
 import './App.css';
 import 'leaflet/dist/leaflet.css';
 
@@ -17,6 +20,8 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/breads/:id" element={<BreadList />} />
           <Route path="/breads/:id/:breadId" element={<BreadDetail />} />
+          <Route path="/create-account" element={<CreateAcctForm />} />
+          <Route path="/login" element={<LoginForm />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </div>
