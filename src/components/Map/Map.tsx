@@ -3,7 +3,6 @@ import { MapContainer, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import countriesGeoJson from '../../data/countries.json';
 import { useNavigate } from 'react-router-dom';
-import './Map.css';
 
 const MapComponent = () => {
   return (
