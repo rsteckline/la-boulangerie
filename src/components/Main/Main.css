@@ -18,7 +18,7 @@ body, html {
     height: 90%;
     width: 90%;
     align-items: center;
-    margin-top: -2rem;
+    margin-top: 3rem;
 }
 
 .error-message {
@@ -32,17 +32,17 @@ body, html {
 
 @media screen and (min-width: 750px) and (max-width: 1024px ) and (orientation: portrait) {
     .map-wrapper >h2 {
-        font-size: xx-large;
+        font-size: 2rem;
     }
 }
 
 /* LARGE BREAKPOINT */
 @media screen and (min-width: 1025px) {
     .map-wrapper {
-        padding-top: 5rem;
+        padding-top: 2rem;
     }
 
     .map-wrapper >h2 {
-        font-size: xx-large;
+        font-size: 2rem;
     }
 }
