@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { NewUser } from "../../apiTypes";
-import { useNavigate } from "react-router-dom";
 
 function CreateAcctForm() {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState<NewUser>({
     name: "",
     email: "",
