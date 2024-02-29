@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { fetchBreadsForCountry } from "../../apiCalls";
-import "./BreadList.css";
 import { BreadData, CountryData, ApiResponse } from "../../apiTypes";
 
 const BreadList = () => {
@@ -31,7 +30,7 @@ const BreadList = () => {
 			<p className="font-abel sm:text-[1.2rem] mb-3 mx-6">{country.attributes.overview}</p>
 			<p className="font-abel sm:text-[1.2rem] mb-5 mx-6">{country.attributes.culinary}</p>
 			<section className="listSection flex justify-center items-center w-screen h-[calc(100vh_+_50px)] bg-[url('/public/shutterstock\_1544878508.jpg')] bg-cover bg-no-repeat bg-center md:h-[100vh]">
-				<div className="listDetail bg-[rgba(231,171,134,0.7)] h-fit w-4/5 flex items-center text-[x-large] overflow-y-auto justify-center pt-8 p-6 rounded-[65px] sm:text-4xl">
+				<div className="listDetail bg-[rgba(231,171,134,0.8)] h-fit w-4/5 flex items-center text-[x-large] overflow-y-auto justify-center pt-8 p-6 rounded-[65px] sm:text-4xl">
 					<ul className="list-none p-0">
 						{breads.map((bread) => (
 							<li className="mb-8 mx-0 my-2"key={bread.id}>
