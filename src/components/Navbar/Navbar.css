@@ -2,21 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-.navbar a {
-	@apply text-black no-underline text-lg p-2 hover:underline hover:text-[white] md:text-xl lg:text-3xl;
-}
-
 /* RESETTING THE NAV ORIENTATION */
 @media screen and (min-width: 750px) {
 	.navbar {
 		@apply top-0 bottom-auto;
 	}
 }
-
-/* .navbar .nav-links {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 100%;
-    padding: 1rem
-} */
