@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body, html {
     background-color: #d0c5b9;
 }
-  
 .error-message {
     margin-top: 20%;
   }

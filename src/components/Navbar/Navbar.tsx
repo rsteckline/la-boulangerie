@@ -8,42 +8,32 @@ const Navbar = () => {
 
   const isLoggedIn = false;
 
+  const isLoginPage = location.pathname === '/login';
+
+  const showBackButton = location.pathname.includes("/breads/") || location.pathname.includes("/countries/") || location.pathname === '/login' || location.pathname === '/create-account';
+
   const handleBack = () => {
     navigate(-1);
   };
 
-  const isDetailPage =
-    location.pathname.includes("/breads/") &&
-    location.pathname.split("/").length >= 3;
-
   return (
     <div className="navbar bg-[#82aa9f] shadow-[-0_-0.5rem_1.5rem_rgba(0,0,0,0.15)] md:shadow-[0_0.5rem_1.5rem_rgba(0,0,0,0.15)] fixed w-full h-14 z-[1000] flex justify-between items-center p-4 left-0 bottom-0">
       <h1>
-        <Link to="/" className="app-title">
-          Belongea's Boulangerie
-        </Link>
+        <Link to="/" className="app-title">Belongea's Boulangerie</Link>
       </h1>
 
       <div className="nav-links flex items-center justify-between w-[30%]">
-        {isDetailPage && (
-          <Link to="#" onClick={handleBack} className="back-link">
-            Back
-          </Link>
+        {showBackButton && (
+          <Link to="#" onClick={handleBack} className="back-link">Back</Link>
         )}
 
-        {!isLoggedIn ? (
-          <>
-            <Link to="/login"className="login">Login</Link>
-          </>
-        ) : (
-          <>
-            <Link to="/breadbox" className="breadbox">BreadBox</Link>
-            <button onClick={() => console.log("Log out")}>Logout</button>
-          </>
-        )}
+        {!isLoggedIn && !isLoginPage ? (
+          <Link to="/login" className="login-link">Login</Link>
+        ) : null}
       </div>
     </div>
   );
 };
+
 
 export default Navbar;
