@@ -23,7 +23,7 @@ function CreateAcctForm() {
       <h2 className="text-2xl text-center">Create Account</h2>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center justify-center gap-1 w-full font-abel"
+        className="flex flex-col items-center justify-center gap-1 w-full font-caveat"
       >
         <div className="container mx-auto px-4 item-center">
           <input

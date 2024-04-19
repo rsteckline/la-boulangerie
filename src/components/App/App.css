@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 .App {
-  background: linear-gradient(#D0C5B9, #E7AB86 30%, #DC7333);
+  background: linear-gradient(#F6E9DA 70%, #f4e4b3);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: "Satisfy", cursive;
+  font-family: "Caveat", cursive;
   justify-content: space-between;
 }

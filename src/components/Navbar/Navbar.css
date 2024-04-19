@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.navbar {
+	@apply font-gluten font-medium;
+}
+
 /* RESETTING THE NAV ORIENTATION */
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 350px) {
 	.navbar {
 		@apply top-0 bottom-auto;
 	}

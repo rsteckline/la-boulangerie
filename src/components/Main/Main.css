@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-    background: linear-gradient(#D0C5B9, #E7AB86 30%, #DC7333);
-}
 .error-message {
     margin-top: 20%;
   }

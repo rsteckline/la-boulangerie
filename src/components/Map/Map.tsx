@@ -1,18 +1,21 @@
-import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, useMap } from 'react-leaflet';
-import L from 'leaflet';
-import countriesGeoJson from '../../data/countries.json';
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { MapContainer, TileLayer, useMap } from "react-leaflet";
+import L from "leaflet";
+import countriesGeoJson from "../../data/countries.json";
+import { useNavigate } from "react-router-dom";
 
 const MapComponent = () => {
   return (
-    <MapContainer 
-      center={[0, 0]} 
-      zoom={2} 
-      style={{height: '80vh', width: '100%'}}
-      maxBounds={[[90, -180], [-90, 180]]}
-      minZoom={2} 
-      maxZoom={8} 
+    <MapContainer
+      center={[0, 0]}
+      zoom={2}
+      style={{ height: "80vh", width: "100%" }}
+      maxBounds={[
+        [90, -180],
+        [-90, 180],
+      ]}
+      minZoom={2}
+      maxZoom={8}
     >
       <TileLayer
         url="https://tile.thunderforest.com/mobile-atlas/{z}/{x}/{y}.png?apikey=a7eda3efcc6b40449d697372a8171c3b"
@@ -31,14 +34,14 @@ const GeoJSONLayer = () => {
   useEffect(() => {
     const geoJsonLayer = L.geoJSON(countriesGeoJson as any, {
       style: () => ({
-        fillColor: "#E7AB86",
-        color: '#9A6747',
-        weight: 2,
-        dashArray: '3',
-        fillOpacity: 0.2
+        fillColor: "#fff0bf",
+        color: "#563c2c",
+        weight: 1,
+        dashArray: "3",
+        fillOpacity: 0.5,
       }),
       onEachFeature: (feature, layer) => {
-        layer.on('click', () => {
+        layer.on("click", () => {
           const countryName = feature.properties.name;
           navigate(`/breads/${countryName}`);
         });

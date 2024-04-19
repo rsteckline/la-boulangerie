@@ -23,32 +23,40 @@ function LoginForm() {
   return (
     <div className="flex flex-col items-center justify-center bg-white bg-opacity-80 shadow rounded-lg p-8 my-20 mx-auto w-9/12 max-w-xl lg:w-8/12 lg:max-w-5xl gap-5 font-satisfy">
       <h2 className="text-3xl text-center">Login</h2>
-      <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center gap-1 w-full">
-      <div className="container mx-auto px-4 item-center font-abel">
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          className="border-2 border-green rounded px-2.5 py-1.5 text-xl text-gray-800 w-full mb-4"
-          value={credentials.email}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Password"
-          className="border-2 border-green rounded px-2.5 py-1.5 text-xl text-gray-800 w-full mb-4"
-          value={credentials.password}
-          onChange={handleChange}
-          required
-        />
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col items-center justify-center gap-1 w-full"
+      >
+        <div className="container mx-auto px-4 item-center font-caveat">
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            className="border-2 border-green rounded px-2.5 py-1.5 text-xl text-gray-800 w-full mb-4"
+            value={credentials.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            className="border-2 border-green rounded px-2.5 py-1.5 text-xl text-gray-800 w-full mb-4"
+            value={credentials.password}
+            onChange={handleChange}
+            required
+          />
         </div>
-        <button type="submit" className="bg-green rounded text-xl text-black w-7/12 px-5 py-2.5 transition-colors duration-500 ease-in-out mb-4 hover:text-white font-abel">Submit</button>
+        <button
+          type="submit"
+          className="bg-green rounded text-xl text-black w-7/12 px-5 py-2.5 transition-colors duration-500 ease-in-out mb-4 hover:text-white font-caveat"
+        >
+          Submit
+        </button>
         <button
           type="submit"
           onClick={() => navigate("/create-account")}
-          className="bg-green rounded text-xl text-black px-5 py-2.5 transition-colors duration-500 ease-in-out hover:text-white font-abel"
+          className="bg-green rounded text-xl text-black px-5 py-2.5 transition-colors duration-500 ease-in-out hover:text-white font-caveat"
         >
           New user? Sign up here
         </button>
