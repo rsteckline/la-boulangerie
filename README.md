@@ -1,10 +1,11 @@
 <div align="center">
-<h1> Belongea's Boulangerie </h1>
+<h1> La Boulangerie </h1>
 
 [Visit the bakery](https://laboulangerie.vercel.app/)
+</br></br>
 
 ## :computer: Tech Stack <br>
-[![TypeScript](https://badges.frapsoft.com/typescript/code/typescript-125x28.png?v=101)](https://github.com/ellerbrock/typescript-badges/)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=FFFFFF)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -19,22 +20,31 @@
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 ![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)
 ![Miro](https://img.shields.io/badge/Miro-F7C922?style=for-the-badge&logo=Miro&logoColor=050036)
-![Github Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Heroku](https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white)
 ![Ruby on Rails](https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 ![CircleCI](https://img.shields.io/badge/circle%20ci-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white)
+![ActiveRecord](https://img.shields.io/badge/ActiveRecord-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=azure&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Projects](https://img.shields.io/badge/GitHub_Projects-121011?style=for-the-badge&logo=github&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![.NET](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Postico](https://img.shields.io/badge/Postico-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white)
+![User Authentication](https://img.shields.io/badge/User_Authentication-00ADD8?style=for-the-badge&logo=auth0&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
 
 </div>
 
 <div align="center">
 
-
 ## :closed_book: Abstract
 
-This project was born out of a love for bread of all kinds. We decided to create an interactive resource connecting a user to breads from across the world. With just a click on a map, a list of breads with cultural information about the tradition of bread-making from that country is displayed, allowing the user to learn more about regional breads. Selecting a bread displays more specific information about that type of bread and also shows a recipe. We wanted to showcase not only the diversity and variety of breads of the world but provide a recipe for the user to adventure into recreating it at home. 
-<br></br>
-We are currently working on Part 1 of the project in which our information is from a handrolled Rails database but in Part 2, we plan to utilize AI to generate a much bigger variety of options for every country in the world. Leveraging AI in this way will allow us to focus on performance and user experience rather than populating a database with information for thousands of breads.
-<br></br>
+A world bakery at your fingertips! This full-stack project integrates Leaflet mapping to generate an interactive map where users can select a country and discover breads with recipes from that region. Originally built using JavaScript with React and TypeScript in an 11-day sprint, the back-end team also built two servers, one in Ruby on Rails and another in C# .NET. We are currently developing additional features and functionality, including a login feature that allows users to 'like' a bread, saving it to their 'Bread Box.' Think of this as a collection of saved breads and recipes for each user, so they can easily find them when it’s time to bake. Please enjoy!
+<br>
 ## :book: Context
 This project was created in an 11 day sprint and is currently in v1 stage of the two-part Capstone project. It was designed, engineered and created by a full-stack team in mod 4 at Turing School of Software and Design. 
 
@@ -43,17 +53,19 @@ This project was created in an 11 day sprint and is currently in v1 stage of the
 
 ### Front End Team:
 
-[Bobby Steckline](https://www.linkedin.com/in/rsteckline/) | [Github](https://github.com/rsteckline)
-<br></br>
+[Bobby Steckline](https://www.linkedin.com/in/rsteckline/) | [Website](https://www.bobbysteckline.com/)
+<br>
 [Deanna Stevens](https://www.linkedin.com/in/deanna-sofia-stevens/) | [Github](https://github.com/dsstevens)
-<br></br>
-[John Clay O'Leary](https://www.linkedin.com/in/john-clay-oleary/) | [Github](https://github.com/Captainlearyo)
-<br></br>
+<br>
+
 ### Back End Team:
 
-[Cory Powell](https://www.linkedin.com/in/coryrpow/) | [Github](https://github.com/coryrpow)
-<br></br>
 [Eric Belongea](https://www.linkedin.com/in/eric-belongea/) | [Github](https://github.com/EricBelongea)
+<br>
+[Cory Powell](https://www.linkedin.com/in/coryrpow/) | [Github](https://github.com/coryrpow)
+<br>
+[Brendan Bondurant](https://www.linkedin.com/in/brendanbondurant/) | [Website](https://www.brendanbondurant.com/)
+<br></br>
 
 
 </div>
@@ -74,24 +86,6 @@ This project was created in an 11 day sprint and is currently in v1 stage of the
 [Our Miro Board](https://miro.com/app/board/uXjVNzS_wwg=/)
 
 </details>
-  
-<details>
-<summary>
-:eyes: Preview of App
- 
-</summary>
-<div align="center">
-  <br></br>
-
-<!--<img src=[screenshot or gif here] -->
-<br></br>
-<!--<img src=[screenshot or gif here] -->
-<br></br>
-<!--<img src=[screenshot or gif here] -->
-<br></br>
-<!--<img src=[screenshot or gif here] -->
-<br></br>
-</details>
 
 
 ## :floppy_disk: Installation Instructions
@@ -102,13 +96,3 @@ To get this app running on your computer:
 3. Run `npm install` to install node dependencies
 4. Run `npm start` to start the development server
 5. Your web browser should navigate to http://localhost:3000/
-
-### :space_invader: Challenges 
-- Looking for and then deciding to build our own bread APIs
-- Integrating an interactive mapping component with Leaflet
-- Creating two iterations, the first built for our C# API and this one for our Rails API
-
-### :dizzy: Wins
-- Utilizing Leaflet mapping with a custom GeoJSON file for our countries
-- Group teamwork made planning, communication, and collaboration very smooth
-- Refactoring this repo for a restructured JSON response after forking off the C# iteration
